@@ -1,0 +1,134 @@
+.culture-event {
+  &__title {
+    margin-bottom: 30px;
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  &__item:hover {
+    border: 1px solid #dfdfdf;
+    transition: all ease 0.3s;
+  }
+
+  &__img-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    img {
+      max-width: 310px;
+      width: 25vw;
+      border-radius: 5px;
+    }
+  }
+
+  &__title-item {
+    margin-bottom: 20px;
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: justify;
+      cursor: pointer;
+    }
+
+    h1:hover {
+      color: var(--red);
+      transition: all ease 0.5s;
+    }
+  }
+
+  &__desc-item {
+    margin-bottom: 20px;
+    p {
+      //key: multiline truncation
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      //   white-space: nowrap; //=> không xuống dòng
+      overflow: hidden; // => ẩn nội dung bị thừa
+      text-overflow: ellipsis; //=> thêm dấu ... đằng sau
+      text-align: justify;
+      font-weight: 100;
+      color: var(--black);
+    }
+  }
+
+  &__more-btn {
+    color: var(--bgr-red);
+    font-weight: 700;
+    cursor: pointer;
+    display: inline;
+  }
+
+  &__btn-see-animation {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    button {
+      width: 350px;
+      height: 70px;
+      border-radius: 10px;
+      background-color: var(--bgr-black);
+      color: var(--white);
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    button:hover {
+      background-color: var(--bgr-red);
+      border: none;
+      cursor: pointer;
+      transition: all ease 0.5s;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .culture-event {
+    &__title-item {
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__desc-item {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .culture-event {
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__item {
+      padding: 20px;
+    }
+
+    &__img-item {
+      img {
+        max-width: 100%;
+        width: 90vw;
+        border-radius: 5px;
+      }
+    }
+  }
+}

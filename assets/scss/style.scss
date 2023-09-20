@@ -1,0 +1,50 @@
+@import "_var.scss";
+@import "header.scss";
+@import "business.scss";
+@import "section2.scss";
+@import "ourProject.scss";
+@import "career.scss";
+@import "environment.scss";
+@import "cultureEvent.scss";
+@import "footer.scss";
+
+// p {
+//   color: $red;
+// }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+html {
+  // set font-size: 10px
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  max-width: 1140px;
+  width: 90vw;
+  padding: 0 20px;
+}
+
+.main-video {
+  //   position: relative;
+  video {
+    // position: absolute;
+    max-width: 100%;
+    width: 100%;
+    z-index: 0;
+    //   height: 300px;
+  }
+}

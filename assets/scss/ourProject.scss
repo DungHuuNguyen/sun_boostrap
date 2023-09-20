@@ -1,0 +1,175 @@
+.our-project {
+  margin-bottom: 100px;
+
+  &__title {
+    max-width: 1140px;
+    width: 90vw;
+    margin-bottom: 30px;
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__left-content {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__btn-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 80%;
+      max-width: 450px;
+      height: 6rem;
+      border-radius: 5px;
+      background-color: var(--bgr-black);
+      color: var(--white);
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--bgr-red);
+      border: none;
+    }
+  }
+
+  &__clients,
+  &__services {
+    display: flex;
+    gap: 20px;
+    // justify-content: center;
+  }
+
+  &__clients-1,
+  &__services-1 {
+    font-size: 110px;
+    font-weight: 700;
+    color: var(--red);
+  }
+
+  &__clients-2,
+  &__services-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    div:first-child {
+      font-size: 44px;
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    div:last-child {
+      color: var(--black);
+      font-size: 24px;
+    }
+  }
+
+  &__right-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      // border: 1px solid black;
+      opacity: 0.2;
+      width: 20vw;
+      min-width: 250px;
+      box-shadow: 0 0 10px 0 rgba(110, 110, 110, 0.5);
+    }
+  }
+
+  &__right-content-desc {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: justify;
+    box-sizing: border-box;
+  }
+
+  &__company {
+    margin: 20px 0;
+  }
+
+  &__name-project {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  &__desc-project {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  &__more {
+    color: var(--bgr-red);
+    font-weight: 700;
+    cursor: pointer;
+    display: inline;
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .our-project {
+    &__clients-1,
+    &__services-1 {
+      font-size: 60px;
+    }
+
+    &__clients-2,
+    &__services-2 {
+      div:first-child {
+        font-size: 20px;
+      }
+
+      div:last-child {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    &__right-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 90vw;
+      }
+    }
+
+    &__right-content-desc {
+      bottom: 0;
+      right: 35px;
+      width: 80vw;
+    }
+  }
+}
