@@ -10,48 +10,120 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header-wrapper">
-      <div class="header">
-        <div class="header__logo">
+    <header
+      class="header-wrapper d-flex justify-content-center position-fixed w-100"
+    >
+      <div class="header d-flex justify-content-between ps-5 pe-5 w-100">
+        <div
+          class="header__logo d-flex justify-content-center align-items-center"
+        >
           <img src="../assets/imgs/logo-sun@2x.png" alt="logo_sun" />
         </div>
-        <div class="header__left-grp">
-          <div class="header__nav-grp">
-            <div class="header__bars">
+        <div class="header__left-grp d-flex justify-content-between">
+          <div
+            class="header__nav-grp d-flex justify-content-center position-relative position-lg-static"
+          >
+            <div class="header__bars d-block d-lg-none position-absolute me-0">
               <i class="fa-solid fa-bars"></i>
             </div>
             <nav class="header__navigation">
-              <ul class="header__nav-list">
-                <li>
-                  <a href=""> Trang chủ </a>
+              <ul
+                class="header__nav-list d-flex flex-column flex-lg-row justify-content-center align-items-center gap-2 mb-0 me-5 h-100"
+              >
+                <li
+                  class="position-relative d-flex d-lg-inline-block justify-content-center p-3"
+                >
+                  <a
+                    href=""
+                    class="text-decoration-none d-flex d-lg-block justify-content-center w-100"
+                  >
+                    Trang chủ
+                  </a>
                 </li>
-                <li>
-                  <a href=""> Về chúng tôi </a>
+                <li
+                  class="position-relative d-flex d-lg-inline-block justify-content-center p-3"
+                >
+                  <a
+                    href=""
+                    class="text-decoration-none d-flex d-lg-block justify-content-center w-100"
+                  >
+                    Về chúng tôi
+                  </a>
                 </li>
-                <li>
-                  <a href=""> Dự án </a>
+                <li
+                  class="position-relative d-flex d-lg-inline-block justify-content-center p-3"
+                >
+                  <a
+                    href=""
+                    class="text-decoration-none d-flex d-lg-block justify-content-center w-100"
+                  >
+                    Dự án
+                  </a>
                 </li>
-                <li>
-                  <a href=""> Cơ hội nghề nghiệp </a>
+                <li
+                  class="position-relative d-flex d-lg-inline-block justify-content-center p-3"
+                >
+                  <a
+                    href=""
+                    class="text-decoration-none d-flex d-lg-block justify-content-center w-100"
+                  >
+                    Cơ hội nghề nghiệp
+                  </a>
                 </li>
-                <li>
-                  <a href=""> Môi trường làm việc </a>
+                <li
+                  class="position-relative d-flex d-lg-inline-block justify-content-center p-3"
+                >
+                  <a
+                    href=""
+                    class="text-decoration-none d-flex d-lg-block justify-content-center w-100"
+                  >
+                    Môi trường làm việc
+                  </a>
                 </li>
-                <li>
-                  <a href=""> Tin tức </a>
+                <li
+                  class="position-relative d-flex d-lg-inline-block justify-content-center p-3"
+                >
+                  <a
+                    href=""
+                    class="text-decoration-none d-flex d-lg-block justify-content-center w-100"
+                  >
+                    Tin tức
+                  </a>
                 </li>
               </ul>
             </nav>
           </div>
-          <div class="header__languages">
-            <ul>
-              <li>VI</li>
-              <li>EN</li>
+          <div class="header__languages d-flex align-items-center gap-5">
+            <ul class="d-flex align-items-center h-100 mb-0">
+              <li class="ps-4 pe-4">VI</li>
+              <li class="ps-4 pe-4">EN</li>
             </ul>
           </div>
         </div>
@@ -67,15 +139,19 @@
           loop
         ></video>
       </section>
-      <div class="main-container">
+      <section class="main-container">
         <div class="main">
           <section class="main-business">
             <div class="main-business__title">
               <h1>Lĩnh vực kinh doanh</h1>
             </div>
-            <div class="main-business__content">
-              <div class="main-business__desc">
-                <p>
+            <div
+              class="main-business__content d-flex flex-column flex-md-row justify-content-between"
+            >
+              <div
+                class="main-business__desc d-flex flex-column justify-content-center align-items-center p-4"
+              >
+                <p class="pb-5">
                   Là một Digital Creative Studio, Sun* luôn đề cao tinh thần làm
                   chủ sản phẩm, tư duy sáng tạo trong mỗi dự án để mang đến
                   những trải nghiệm <strong>"Awesome"</strong> nhất cho
@@ -89,7 +165,9 @@
                 </p>
               </div>
 
-              <div class="main-business__img-business">
+              <div
+                class="main-business__img-business d-flex justify-content-center align-items-center"
+              >
                 <img
                   src="../assets/imgs/intro-business.png"
                   alt="business_sun"
@@ -98,18 +176,20 @@
             </div>
           </section>
 
-          <section class="section2">
-            <div class="section2__create-engineering">
-              <div class="section2__sub">
+          <section
+            class="section2 d-flex flex-md-row flex-column justify-content-center align-items-center"
+          >
+            <div class="section2__create-engineering p-5">
+              <div class="section2__sub mb-5">
                 <p>Digital Creative Studio</p>
               </div>
-              <div class="section2__title">
+              <div class="section2__title mb-5">
                 <h1>
                   Creative <br />
                   & Engineering
                 </h1>
               </div>
-              <div class="section2__desc">
+              <div class="section2__desc mb-5">
                 <p>
                   Đội ngũ nhân lực dồi dào chuyên về công nghệ, thiết kế và kinh
                   doanh.
@@ -118,22 +198,24 @@
               <div class="section2__btn section2__btn--left">
                 <button>
                   Tìm hiểu thêm
-                  <i class="section2__arrow-icon fa-solid fa-arrow-right"></i>
+                  <i
+                    class="section2__arrow-icon ps-2 pe-2 pt-1 pb-1 rounded-circle fa-solid fa-arrow-right"
+                  ></i>
                 </button>
               </div>
             </div>
 
-            <div class="section2__talent-platform">
-              <div class="section2__sub">
+            <div class="section2__talent-platform p-5">
+              <div class="section2__sub mb-5">
                 <p>Digital Creative Studio</p>
               </div>
-              <div class="section2__title">
+              <div class="section2__title mb-5">
                 <h1>
                   Talent <br />
                   Platform
                 </h1>
               </div>
-              <div class="section2__desc">
+              <div class="section2__desc mb-5">
                 <p>
                   Các giải pháp nguồn nhân lực hỗ trợ tăng trưởng kinh doanh bền
                   vững.
@@ -142,33 +224,47 @@
               <div class="section2__btn section2__btn--right">
                 <button>
                   Tìm hiểu thêm
-                  <i class="section2__arrow-icon fa-solid fa-arrow-right"></i>
+                  <i
+                    class="section2__arrow-icon ps-2 pe-2 pt-1 pb-1 rounded-circle fa-solid fa-arrow-right"
+                  ></i>
                 </button>
               </div>
             </div>
           </section>
 
-          <section class="our-project">
+          <section
+            class="our-project d-flex d-sm-block flex-column align-items-center"
+          >
             <div class="our-project__title">
               <h1>Dự án của chúng tôi</h1>
             </div>
-            <div class="our-project__content">
-              <div class="our-project__left-content">
-                <div class="our-project__clients">
+            <div
+              class="our-project__content d-flex flex-column flex-md-row justify-content-center"
+            >
+              <div
+                class="our-project__left-content d-flex flex-column justify-content-center"
+              >
+                <div class="our-project__clients d-flex">
                   <div class="our-project__clients-1">200</div>
-                  <div class="our-project__clients-2">
+                  <div
+                    class="our-project__clients-2 d-flex flex-column justify-content-around"
+                  >
                     <div>++</div>
                     <div>Đối tác</div>
                   </div>
                 </div>
-                <div class="our-project__services">
+                <div class="our-project__services d-flex">
                   <div class="our-project__services-1">300</div>
-                  <div class="our-project__services-2">
+                  <div
+                    class="our-project__services-2 d-flex flex-column justify-content-around"
+                  >
                     <div>++</div>
                     <div>Dịch vụ được hỗ trợ</div>
                   </div>
                 </div>
-                <div class="our-project__btn-left">
+                <div
+                  class="our-project__btn-left d-flex justify-content-center align-items-center"
+                >
                   <button>
                     Xem tất cả dự án
                     <i class="fa-solid fa-arrow-right"></i>
@@ -176,12 +272,16 @@
                 </div>
               </div>
 
-              <div class="our-project__right-content">
+              <div
+                class="our-project__right-content d-flex justify-content-center align-items-center position-relative"
+              >
                 <img
                   src="https://sun-asterisk.vn/wp-content/uploads/2021/03/zenkigen_01.png"
                   alt="zenkigen"
                 />
-                <div class="our-project__right-content-desc">
+                <div
+                  class="our-project__right-content-desc position-absolute bottom-0 end-0 p-4"
+                >
                   <div class="our-project__company">Công ty TNHH ZENKIGEN</div>
                   <div class="our-project__name-project">Dự án HARUTAKA</div>
                   <div class="our-project__desc-project">
@@ -198,22 +298,22 @@
             </div>
           </section>
 
-          <section class="career">
-            <div class="career__sub_title">
+          <section class="career position-relative">
+            <div class="career__sub_title d-flex justify-content-center">
               <h6>Sun Asterisk</h6>
             </div>
-            <div class="career__title">
+            <div class="career__title d-flex justify-content-center ps-4 pe-4">
               <h1>Cơ hội nghề nghiệp</h1>
             </div>
-            <div class="career__desc">
-              <p>Join us & MAKE AWESOME THINGS THAT MATTER.</p>
+            <div class="career__desc text-center ps-4 pe-4">
+              <p class="mb-5">Join us & MAKE AWESOME THINGS THAT MATTER.</p>
               <p>
                 Sun* luôn tìm kiếm những con người đam mê thử thách để tạo nên
                 những giá trị "Awesome".<br />
                 Cùng trở thành một phần của Sun* ngay hôm nay.
               </p>
             </div>
-            <div class="career__btn">
+            <div class="career__btn d-flex justify-content-center">
               <button>
                 Gia nhập đội ngũ Sun*
                 <i class="fa-solid fa-arrow-right"></i>
@@ -226,9 +326,13 @@
               <h1>Môi trường làm việc</h1>
             </div>
 
-            <div class="working-environment">
-              <div class="working-environment__left-grp">
-                <div class="working-environment__left-item">
+            <div class="working-environment row">
+              <div
+                class="working-environment__left-grp col-12 col-md-6 d-flex justify-content-center align-items-center flex-column"
+              >
+                <div
+                  class="working-environment__left-item d-flex align-items-center"
+                >
                   <div class="working-environment__check-icon">
                     <i class="fa-solid fa-check"></i>
                   </div>
@@ -237,7 +341,9 @@
                     tục cho bản thân.
                   </p>
                 </div>
-                <div class="working-environment__left-item">
+                <div
+                  class="working-environment__left-item d-flex align-items-center"
+                >
                   <div class="working-environment__check-icon">
                     <i class="fa-solid fa-check"></i>
                   </div>
@@ -247,7 +353,9 @@
                     tập.
                   </p>
                 </div>
-                <div class="working-environment__left-item">
+                <div
+                  class="working-environment__left-item d-flex align-items-center"
+                >
                   <div class="working-environment__check-icon">
                     <i class="fa-solid fa-check"></i>
                   </div>
@@ -258,12 +366,14 @@
                 </div>
               </div>
 
-              <div class="working-environment__right-grp">
+              <div
+                class="working-environment__right-grp col-12 col-md-6 position-relative"
+              >
                 <img
                   src="../assets/imgs/environment.png"
                   alt="environment-hr"
                 />
-                <button>
+                <button class="position-absolute">
                   Xem chi tiết
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
@@ -272,13 +382,18 @@
           </section>
 
           <section class="culture-event">
-            <div class="culture-event__title">
+            <div class="culture-event__title mb-5">
               <h1>Văn hóa - Sự kiện</h1>
             </div>
-            <div class="culture-event__content">
-              <div class="culture-event__item">
-                <div class="culture-event__img-item">
+            <div
+              class="culture-event__content d-flex flex-column flex-md-row justify-content-between align-items-center"
+            >
+              <div class="culture-event__item rounded-4 p-4">
+                <div
+                  class="culture-event__img-item d-flex justify-content-center mb-4"
+                >
                   <img
+                    class="rounded-2"
                     src="https://news.sun-asterisk.com/images/440x248/7cc9cf53-2ee6-4559-b3a2-b6914f59e2a6.png"
                     alt="evnt1"
                   />
@@ -289,7 +404,7 @@
                     năng thay thế ví tiền
                   </h1>
                 </div>
-                <div class="culture-event__desc-item">
+                <div class="culture-event__desc-item mb-4">
                   <p>
                     Dự án Evering (hay còn được gọi là Ring) do đội ngũ trực
                     thuộc CEV11 nhà Sun* thực hiện, đã hoàn thành sứ mệnh của
@@ -300,14 +415,17 @@
                     giải mã ngay nhé!
                   </p>
                 </div>
-                <div class="culture-event__more-btn">
+                <div class="culture-event__more-btn d-inline">
                   Xem chi tiết
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
-              <div class="culture-event__item">
-                <div class="culture-event__img-item">
+              <div class="culture-event__item rounded-4 p-4">
+                <div
+                  class="culture-event__img-item d-flex justify-content-center mb-4"
+                >
                   <img
+                    class="rounded-2"
                     src="https://news.sun-asterisk.com/images/440x248/7cc9cf53-2ee6-4559-b3a2-b6914f59e2a6.png"
                     alt="evnt1"
                   />
@@ -318,7 +436,7 @@
                     năng thay thế ví tiền
                   </h1>
                 </div>
-                <div class="culture-event__desc-item">
+                <div class="culture-event__desc-item mb-4">
                   <p>
                     Dự án Evering (hay còn được gọi là Ring) do đội ngũ trực
                     thuộc CEV11 nhà Sun* thực hiện, đã hoàn thành sứ mệnh của
@@ -329,14 +447,17 @@
                     Sun* News giải mã ngay nhé!
                   </p>
                 </div>
-                <div class="culture-event__more-btn">
+                <div class="culture-event__more-btn d-inline">
                   Xem chi tiết
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
-              <div class="culture-event__item">
-                <div class="culture-event__img-item">
+              <div class="culture-event__item rounded-4 p-4">
+                <div
+                  class="culture-event__img-item d-flex justify-content-center mb-4"
+                >
                   <img
+                    class="rounded-2"
                     src="https://news.sun-asterisk.com/images/440x248/7cc9cf53-2ee6-4559-b3a2-b6914f59e2a6.png"
                     alt="evnt1"
                   />
@@ -347,7 +468,7 @@
                     năng thay thế ví tiền
                   </h1>
                 </div>
-                <div class="culture-event__desc-item">
+                <div class="culture-event__desc-item mb-4">
                   <p>
                     Dự án Evering (hay còn được gọi là Ring) do đội ngũ trực
                     thuộc CEV11 nhà Sun* thực hiện, đã hoàn thành sứ mệnh của
@@ -358,64 +479,72 @@
                     Sun* News giải mã ngay nhé!
                   </p>
                 </div>
-                <div class="culture-event__more-btn">
+                <div class="culture-event__more-btn d-inline">
                   Xem chi tiết
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
             </div>
 
-            <div class="culture-event__btn-see-animation">
-              <button>
+            <div
+              class="culture-event__btn-see-animation d-flex justify-content-center mt-5 mb-5"
+            >
+              <button class="rounded-4">
                 Xem nhiều tin hơn
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </section>
         </div>
-      </div>
+      </section>
     </article>
 
-    <footer class="footer-wrapper">
+    <footer class="footer-wrapper d-flex justify-content-center">
       <article class="footer">
-        <section class="footer__section1">
-          <img src="../assets/imgs/logo-sun@2x.png" alt="sun_logo" />
-          <div class="footer__item">
-            <h3 class="footer__item-title">Chúng tôi là ai?</h3>
-            <ul class="footer__ul-item">
+        <section class="footer__section1 row">
+          <div
+            class="col-12 col-md-3 d-flex justify-content-start justify-content-md-center mb-5"
+          >
+            <img src="../assets/imgs/logo-sun@2x.png" alt="sun_logo" />
+          </div>
+          <div class="footer__item col-12 col-md-3 position-relative">
+            <h3 class="footer__item-title mb-5">Chúng tôi là ai?</h3>
+            <ul class="footer__ul-item mt-5 mb-5">
               <li class="footer__list-item">Tầm nhìn, sứ mệnh</li>
               <li class="footer__list-item">Giá trị cốt lõi</li>
               <li class="footer__list-item">Ý nghĩa tên Sun*</li>
               <li class="footer__list-item">Cẩm nang hành động</li>
             </ul>
           </div>
-          <div class="footer__item">
-            <h3 class="footer__item-title">Chúng tôi làm gì?</h3>
-            <ul class="footer__ul-item">
+          <div class="footer__item col-12 col-md-3 position-relative">
+            <h3 class="footer__item-title mb-5">Chúng tôi làm gì?</h3>
+            <ul class="footer__ul-item mt-5 mb-5">
               <li class="footer__list-item">Creative & Engineering</li>
               <li class="footer__list-item">Talent Platform</li>
               <li class="footer__list-item">Dự án của chúng tôi</li>
             </ul>
           </div>
-          <div class="footer__item">
-            <h3 class="footer__item-title">Cập nhật tin tức</h3>
-            <ul class="footer__ul-item">
+          <div class="footer__item col-12 col-md-3 position-relative">
+            <h3 class="footer__item-title mb-5">Cập nhật tin tức</h3>
+            <ul class="footer__ul-item mb-5 pb-5">
               <li class="footer__list-item">Văn hóa - Sự kiện</li>
               <li class="footer__list-item">Tuyển dụng</li>
               <li class="footer__list-item">Chính sách phúc lợi</li>
             </ul>
           </div>
-          <div class="footer__item"></div>
-          <div class="footer__item">
-            <h3 class="footer__item-title">Liên hệ</h3>
-            <ul class="footer__ul-item">
+          <div class="footer__item col-12 col-md-3 position-relative"></div>
+          <div class="footer__item col-12 col-md-3 position-relative">
+            <h3 class="footer__item-title mb-5">Liên hệ</h3>
+            <ul class="footer__ul-item mt-5 mb-5">
               <li class="footer__list-item">SĐT: 84-24-3795-5417</li>
               <li class="footer__list-item">Email: hr@sun-asterisk.com</li>
             </ul>
           </div>
-          <div class="footer__item footer__item-7">
-            <h3 class="footer__item-title">Văn phòng</h3>
-            <ul class="footer__ul-item">
+          <div
+            class="footer__item footer__item-7 col-12 col-md-6 position-relative"
+          >
+            <h3 class="footer__item-title mb-5">Văn phòng</h3>
+            <ul class="footer__ul-item mt-5 mb-5">
               <li class="footer__list-item">
                 T13, Keangnam Hanoi Landmark Tower, khu E6, khu ĐTM Cầu Giấy,
                 phường Mễ Trì, quận Nam Từ Liêm, Hà Nội
@@ -435,8 +564,12 @@
           </div>
         </section>
 
-        <section class="footer__section2">
-          <div class="footer__certificate-grp">
+        <section
+          class="footer__section2 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between gap-5"
+        >
+          <div
+            class="footer__certificate-grp d-flex 7BNuJrYU8ZR1iNSckTqDhY1FbMjPETcX0Rm align-items-center gap-4"
+          >
             <div class="footer__certificate-icon">
               <img
                 src="https://sun-asterisk.vn/wp-content/uploads/2020/10/bear-footer.png"
@@ -459,7 +592,9 @@
             </div>
           </div>
 
-          <div class="footer__social-network-grp">
+          <div
+            class="footer__social-network-grp d-flex justify-content-between align-items-center gap-4"
+          >
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>

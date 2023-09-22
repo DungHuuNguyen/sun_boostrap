@@ -3,30 +3,17 @@
 }
 
 .working-environment-title {
-  // margin-bottom: 30px;
   h1 {
     font-size: 3.2rem;
   }
 }
 
 .working-environment {
-  display: flex;
-  justify-content: center;
-
-  &__left-grp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   &__left-item {
-    display: flex;
-    align-items: center;
     gap: 20px;
     p {
       line-height: 1.5;
-      font-size: 16px;
+      font-size: 16px !important;
       text-align: justify;
       margin: 20px;
     }
@@ -42,11 +29,8 @@
   }
 
   &__right-grp {
-    position: relative;
     img {
       width: 40vw;
-      max-width: 540px;
-      max-height: 433px;
     }
 
     button {
@@ -58,9 +42,8 @@
       color: var(--white);
       font-size: 18px;
       font-weight: 600;
-      position: absolute;
-      bottom: 40px;
-      right: 50px;
+      bottom: 30px;
+      right: 80px;
       cursor: pointer;
     }
 
@@ -87,29 +70,18 @@
 
 @media screen and (max-width: 768px) {
   .working-environment {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
     &__left-grp {
       display: block;
     }
 
     &__right-grp {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      width: 90vw;
-      max-width: 100%;
-
       img {
         width: 100%;
       }
       button {
-        width: 100%;
-        position: absolute;
         bottom: 20px;
         right: 0;
+        width: 100%;
         max-width: 100%;
       }
     }

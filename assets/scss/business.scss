@@ -11,22 +11,14 @@
   }
 
   &__content {
-    display: flex;
-    justify-content: space-between;
     gap: 50px;
     border: 6px solid #f9f9f9;
     border-radius: 16px;
   }
 
   &__desc {
-    // border-right: 1px solid black;
     text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 50%;
-    padding: 15px;
 
     p {
       font-size: 1.6rem;
@@ -34,15 +26,8 @@
       font-weight: 100;
       line-height: 30px;
     }
-
-    p:first-child {
-      padding-bottom: 30px;
-    }
   }
   &__img-business {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     img {
       transform: scale(1.2);
       max-width: 450px;
@@ -56,10 +41,7 @@
 @media screen and (max-width: 768px) {
   .main-business {
     &__content {
-      display: flex;
-      flex-direction: column;
       gap: 80px;
-      align-items: center;
     }
 
     &__desc {

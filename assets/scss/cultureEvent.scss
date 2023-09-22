@@ -1,40 +1,26 @@
 .culture-event {
   &__title {
-    margin-bottom: 30px;
     h1 {
       font-size: 3.2rem;
     }
   }
 
-  &__content {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__item {
     border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 15px;
   }
-
   &__item:hover {
     border: 1px solid #dfdfdf;
     transition: all ease 0.3s;
   }
 
   &__img-item {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
     img {
       max-width: 310px;
       width: 25vw;
-      border-radius: 5px;
     }
   }
 
   &__title-item {
-    margin-bottom: 20px;
     h1 {
       font-size: 1.6rem;
       font-weight: 700;
@@ -49,7 +35,6 @@
   }
 
   &__desc-item {
-    margin-bottom: 20px;
     p {
       //key: multiline truncation
       display: -webkit-box;
@@ -61,24 +46,21 @@
       text-align: justify;
       font-weight: 100;
       color: var(--black);
+      font-size: 14px;
     }
   }
 
   &__more-btn {
     color: var(--bgr-red);
+    font-size: 12px;
     font-weight: 700;
     cursor: pointer;
-    display: inline;
   }
 
   &__btn-see-animation {
-    margin: 40px 0;
-    display: flex;
-    justify-content: center;
     button {
       width: 350px;
       height: 70px;
-      border-radius: 10px;
       background-color: var(--bgr-black);
       color: var(--white);
       font-size: 2rem;
@@ -113,20 +95,13 @@
 @media screen and (max-width: 768px) {
   .culture-event {
     &__content {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 30px;
-    }
-
-    &__item {
-      padding: 20px;
     }
 
     &__img-item {
       img {
         max-width: 100%;
-        width: 90vw;
+        width: 100%;
         border-radius: 5px;
       }
     }
